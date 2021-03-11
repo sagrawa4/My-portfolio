@@ -107,11 +107,6 @@ input, select {
     text-decoration: none;
 }
 
-body {
-    background-color: #f3f3f3;
-
-}
-
 header {
     background-color: #fff ;
     width: 100%;
@@ -119,7 +114,7 @@ header {
 }
 
 header .header-welcome{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #111;
     font-size: 24px;
     font-weight: 900;
@@ -146,6 +141,7 @@ header nav ul li a {
     font-family: 'Times New Roman', Times, serif;
     color: #111;
     font-size: 16px;
+    text-transform: uppercase;
     
 }
 
@@ -153,20 +149,58 @@ header .header-info{
     display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+    header .header-welcome{
+        margin: 31px 0 ;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+    }
+    
+   
+    header nav ul li a {
+        line-height: 60px;
+        
+    }
+    header .header-info{
+        display: block;
+        font-family: 'Times New Roman', Times, serif;
+        color: #111;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        padding: 0 20px;
+        line-height: 40px;
+        margin-top: 30px;
+    }
+}
+
 /* INDEX */
 
 .index-banner{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 20px);
     background-image: url('Shruti_photo.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: table;
 }
 
 .vertical-center{
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .index-banner h2{
@@ -189,4 +223,75 @@ header .header-info{
     font-weight: 100;
     padding-top: 20px;
     text-shadow: 2px 2px 8px #111;
+}
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 20px);
+    height: 100px;
+    background-color: #f2f2f2;
+
+}
+
+.index-links div h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: #111;
+    line-height: 40 px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 20px;
+    text-shadow: 2px 2px 8px #111;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .index-banner{
+        width: 100%;
+        height: 500px;
+        background-image: url('Shruti_photo.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+    
+}
+
+footer{
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: rosybrown;
+    overflow: hidden;
+}
+footer ul{
+    width: fit-content;
+    float: left;
+    
+}
+
+footer ul li{
+    display: block;
+    list-style: none;
+
+}
+
+footer ul li a{
+    font-family: 'Times New Roman', Times, serif;
+    color: #111;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 8px #fff;
+}
+.footer-sm {
+    width: 50px;
+    float: right;
+}
+
+.footer-sm img{
+    width: 100%;
+   margin-bottom: 10px;
 }
